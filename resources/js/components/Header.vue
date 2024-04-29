@@ -20,6 +20,15 @@
                     <li class="nav-item">
                         <RouterLink class="nav-link" :class="{ active: $route.path === '/movies/create'}" to="/movies/create">Add Movie</RouterLink>
                     </li>
+                    <li class="nav-item">
+                        <RouterLink class="nav-link" :class="{ active: $route.path === '/movies'}" to="/movies">Movies</RouterLink>
+                    </li>
+                    <li class="nav-item">
+                        <RouterLink class="nav-link" :class="{ active: $route.path === '/login'}" to="/login">Login</RouterLink>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link" @click="logOut">Logout</button>
+                    </li>
                 </ul>
             </div>
         </div>
